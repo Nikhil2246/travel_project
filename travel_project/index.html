@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Booking</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="script.js">
+</head>
+<body>
+    <header>
+        <h1>Travel Booking Platform</h1>
+    </header>
+
+    <main>
+        <section id="accommodation-list">
+            <h2>Available Accommodations</h2>
+            <div class="accommodation" data-id="1">
+     <img src="https://i.pinimg.com/originals/ac/52/17/ac5217f0c785530cd1733d046728d598.jpg" alt="Cozy Cottage" style="width: 300px; height: auto;">
+                <h3>Cozy Cottage</h3>
+                <p>Location: Lake Tahoe</p>
+                <p>Price: $150 per night</p>
+                <button class="view-details">View Details</button>
+            </div>
+            <div class="accommodation" data-id="2">
+                <img src="https://th.bing.com/th/id/OIP.OC_TRZQDEaMtSYdJbUoNnQHaDP?rs=1&pid=ImgDetMain" alt="Beachfront Villa" style="width: 300px; height: 200px">
+                <h3>Beachfront Villa</h3>
+                <p>Location: Miami</p>
+                <p>Price: $300 per night</p>
+                <button class="view-details">View Details</button>
+            </div>
+            <div class="accommodation" data-id="3">
+                <img src="https://cdn1.matadornetwork.com/blogs/1/2020/12/Secluded-cabin-in-Bryson-City-North-Carolina.jpg" alt="Mountain Retreat" style="width: 300px; height: auto">
+                <h3>Mountain Retreat</h3>
+                <p>Location: Aspen</p>
+                <p>Price: $200 per night</p>
+                <button class="view-details">View Details</button>
+            </div>
+            <div class="accommodation" data-id="2">
+                <img src="https://th.bing.com/th/id/OIP.l0t1W9mhcHB34C4iDtB35wHaEc?rs=1&pid=ImgDetMain" alt="Pool Villa" style="width: 300px; height: 200px">
+                <h3>Pool Villa</h3>
+                <p>Location: Nagaland</p>
+                <p>Price: $100 per night</p>
+                <button class="view-details">View Details</button>
+            </div>
+            <div class="accommodation" data-id="2">
+                <img src="https://rishikeshcamp.in/img/ib/ib7.jpg" alt="Camp" style="width: 300px; height: 200px">
+                <h3>Camp</h3>
+                <p>Location: Newziland</p>
+                <p>Price: $250 per night</p>
+                <button class="view-details">View Details</button>
+            </div>
+            <div class="accommodation" data-id="2">
+                <img src="https://th.bing.com/th/id/OIP.KL7KSUHlTtS33Zwx1uSWIQHaE8?rs=1&pid=ImgDetMain" alt="Mount Everest" style="width: 300px; height: 200px">
+                <h3>Mount Everest</h3>
+                <p>Location: Himalyas</p>
+                <p>Price: $350 per night</p>
+                <button class="view-details">View Details</button>
+            </div>
+        </section>
+
+        <section id="accommodation-detail" style="display: none;">
+            <h2>Accommodation Details</h2>
+            <div id="detail-content"></div>
+            <h3>Booking Form</h3>
+            <form id="booking-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <label for="check-in">Check-in Date:</label>
+                <input type="date" id="check-in" required>
+                <label for="check-out">Check-out Date:</label>
+                <input type="date" id="check-out" required>
+                <button type="submit">Book Now</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Travel Booking Platform. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
